@@ -41,6 +41,12 @@ export const metadata: Metadata = {
     "nursery rhyme videos",
     "kids YouTube songs",
   ],
+  openGraph: {
+    title: "Sam's Happy Kids Sing-Along | Nursery Rhymes, Kids Songs and Lullabies",
+    description:
+      "Joyful nursery rhymes, learning songs, bedtime lullabies, and sing-along music for babies, toddlers, preschoolers, and families.",
+    images: ["/images/album-sing-along-vol-1.png"],
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Section from "@/components/Section";
 import WaveDivider from "@/components/WaveDivider";
 import Button from "@/components/Button";
@@ -61,6 +62,16 @@ export default function Home() {
             <Button href="/about" variant="outline">
               Meet the Characters
             </Button>
+          </div>
+          <div className="mt-14 w-full max-w-3xl overflow-hidden rounded-3xl shadow-xl ring-1 ring-ink/5">
+            <Image
+              src="/images/album-sing-along-vol-1.png"
+              alt="Sam's Happy Kids Sing-Along — Full Album Vol. 1, featuring Sam's Happy Kids and family"
+              width={1672}
+              height={941}
+              className="h-auto w-full object-cover"
+              priority
+            />
           </div>
         </div>
       </section>

@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Section from "@/components/Section";
 import Button from "@/components/Button";
 import CategoryCard from "@/components/CategoryCard";
-import { songCategories } from "@/lib/data";
+import { albums, songCategories } from "@/lib/data";
 import { externalLinks } from "@/lib/links";
 
 export const metadata: Metadata = {
@@ -52,9 +53,34 @@ export default function SongsPage() {
         </h2>
         <p className="mx-auto mt-6 max-w-2xl leading-relaxed text-ink/70">
           Enjoy full collections of children&apos;s songs created for
-          everyday listening. Our albums are perfect for:
+          everyday listening.
         </p>
-        <ul className="mx-auto mt-8 flex max-w-2xl flex-wrap justify-center gap-3">
+        <div className="mx-auto mt-10 grid max-w-4xl gap-8 sm:grid-cols-2">
+          {albums.map((album) => (
+            <div
+              key={album.title}
+              className="overflow-hidden rounded-3xl bg-white shadow-md ring-1 ring-ink/5"
+            >
+              <Image
+                src={album.image}
+                alt={`${album.title} — ${album.subtitle}`}
+                width={1672}
+                height={941}
+                className="h-auto w-full object-cover"
+              />
+              <div className="p-5 text-left">
+                <h3 className="font-display text-lg font-bold text-ink">
+                  {album.title}
+                </h3>
+                <p className="text-sm text-ink/60">{album.subtitle}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+        <p className="mx-auto mt-10 max-w-2xl leading-relaxed text-ink/70">
+          Our albums are perfect for:
+        </p>
+        <ul className="mx-auto mt-6 flex max-w-2xl flex-wrap justify-center gap-3">
           {albumUses.map((use) => (
             <li
               key={use}

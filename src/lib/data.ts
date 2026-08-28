@@ -105,6 +105,19 @@ export const characters: { name: string; blurb: string; emoji: string; color: Co
   },
 ];
 
+export const albums: { title: string; subtitle: string; image: string }[] = [
+  {
+    title: "Full Album Vol. 1",
+    subtitle: "Sam's Happy Kids Sing-Along",
+    image: "/images/album-sing-along-vol-1.png",
+  },
+  {
+    title: "Full Album Vol. 2",
+    subtitle: "Sam's Happy Kids Nursery Rhymes",
+    image: "/images/album-nursery-rhymes-vol-2.png",
+  },
+];
+
 export const platforms: { name: string; color: ColorKey }[] = [
   { name: "YouTube", color: "coral" },
   { name: "Spotify", color: "grass" },

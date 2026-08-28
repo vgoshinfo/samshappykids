@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { mainNav } from "@/lib/links";
@@ -10,11 +11,15 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 border-b-4 border-sunny bg-white/90 backdrop-blur">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <Link href="/" className="flex items-center gap-2" onClick={() => setOpen(false)}>
-          <span className="text-3xl">🎵</span>
-          <span className="font-display text-xl font-bold text-ink sm:text-2xl">
-            Sam&apos;s Happy Kids
-          </span>
+        <Link href="/" onClick={() => setOpen(false)}>
+          <Image
+            src="/images/logo.jpeg"
+            alt="Sam's Happy Kids Sing-Along"
+            width={1024}
+            height={1024}
+            className="h-12 w-auto object-contain sm:h-14"
+            priority
+          />
         </Link>
 
         <nav className="hidden items-center gap-1 md:flex">
