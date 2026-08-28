@@ -3,12 +3,19 @@ import type { ColorKey } from "@/lib/data";
 
 type CharacterCardProps = {
   name: string;
+  tagline: string;
   blurb: string;
   emoji: string;
   color: ColorKey;
 };
 
-export default function CharacterCard({ name, blurb, emoji, color }: CharacterCardProps) {
+export default function CharacterCard({
+  name,
+  tagline,
+  blurb,
+  emoji,
+  color,
+}: CharacterCardProps) {
   const c = colorClasses[color];
 
   return (
@@ -19,7 +26,10 @@ export default function CharacterCard({ name, blurb, emoji, color }: CharacterCa
         {emoji}
       </div>
       <h3 className="mt-4 font-display text-lg font-bold text-ink">{name}</h3>
-      <p className="mt-1 max-w-[16rem] text-sm leading-relaxed text-ink/70">{blurb}</p>
+      <span className={`mt-1 rounded-full px-3 py-0.5 text-xs font-semibold ${c.bgSoft} ${c.text}`}>
+        {tagline}
+      </span>
+      <p className="mt-2 max-w-[16rem] text-sm leading-relaxed text-ink/70">{blurb}</p>
     </div>
   );
 }

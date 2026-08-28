@@ -198,6 +198,15 @@ export default function Home() {
             family.
           </p>
         </div>
+        <div className="mx-auto mt-10 max-w-4xl overflow-hidden rounded-3xl shadow-xl ring-1 ring-ink/5">
+          <Image
+            src="/images/character-lineup.png"
+            alt="Character lineup — Sam the Musical Leader, Mia the Little Dancer, Leo the Explorer, Lily the Little Dreamer, and Noah the Little Thinker"
+            width={1536}
+            height={1024}
+            className="h-auto w-full object-cover"
+          />
+        </div>
         <div className="mt-12 grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
           {characters.map((character) => (
             <CharacterCard key={character.name} {...character} />

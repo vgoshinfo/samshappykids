@@ -72,34 +72,45 @@ export const songCategories: { title: string; blurb: string; emoji: string; colo
   },
 ];
 
-export const characters: { name: string; blurb: string; emoji: string; color: ColorKey }[] = [
+export const characters: {
+  name: string;
+  tagline: string;
+  blurb: string;
+  emoji: string;
+  color: ColorKey;
+}[] = [
   {
     name: "Sam",
-    blurb: "The cheerful leader who loves music, friendship, and helping everyone sing along.",
+    tagline: "The Musical Leader",
+    blurb: "Curious, kind, and encouraging — Sam loves music, friendship, and helping everyone sing along.",
     emoji: "🦁",
     color: "sunny",
   },
   {
     name: "Mia",
-    blurb: "Sweet, bright, and full of kindness, Mia loves melodies, colors, and happy little moments.",
+    tagline: "The Little Dancer",
+    blurb: "Energetic, playful, and expressive, Mia loves melodies, colors, and happy little moments.",
     emoji: "🌸",
     color: "coral",
   },
   {
     name: "Leo",
-    blurb: "Playful and energetic, Leo brings fun, movement, and big smiles to every song.",
+    tagline: "The Explorer",
+    blurb: "Adventurous, brave, and curious, Leo brings fun, movement, and big smiles to every song.",
     emoji: "🐵",
     color: "grass",
   },
   {
     name: "Lily",
-    blurb: "Gentle and curious, Lily loves stories, nature, and peaceful bedtime tunes.",
+    tagline: "The Little Dreamer",
+    blurb: "Gentle, sweet, and imaginative, Lily loves stories, nature, and peaceful bedtime tunes.",
     emoji: "🦋",
     color: "sky",
   },
   {
     name: "Noah",
-    blurb: "Friendly and imaginative, Noah enjoys adventures, animals, and silly sing-along fun.",
+    tagline: "The Little Thinker",
+    blurb: "Curious, clever, and a little silly, Noah enjoys adventures, animals, and sing-along fun.",
     emoji: "🦊",
     color: "grape",
   },

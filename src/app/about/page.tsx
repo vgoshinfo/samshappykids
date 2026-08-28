@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Section from "@/components/Section";
 
 export const metadata: Metadata = {
@@ -36,6 +37,16 @@ export default function AboutPage() {
             help them learn, and give families beautiful music moments to
             enjoy together.
           </p>
+          <div className="mx-auto mt-10 max-w-2xl overflow-hidden rounded-3xl shadow-xl">
+            <Image
+              src="/images/character-group.png"
+              alt="Sam, Mia, Leo, Lily, Noah, and Bingo the puppy"
+              width={1536}
+              height={1024}
+              className="h-auto w-full object-cover"
+              priority
+            />
+          </div>
         </div>
       </section>
 
