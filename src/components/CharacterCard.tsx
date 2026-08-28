@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { colorClasses } from "@/lib/colors";
 import type { ColorKey } from "@/lib/data";
 
@@ -5,7 +6,9 @@ type CharacterCardProps = {
   name: string;
   tagline: string;
   blurb: string;
-  emoji: string;
+  image: string;
+  imageWidth: number;
+  imageHeight: number;
   color: ColorKey;
 };
 
@@ -13,17 +16,23 @@ export default function CharacterCard({
   name,
   tagline,
   blurb,
-  emoji,
+  image,
+  imageWidth,
+  imageHeight,
   color,
 }: CharacterCardProps) {
   const c = colorClasses[color];
 
   return (
     <div className="flex flex-col items-center text-center">
-      <div
-        className={`flex h-28 w-28 items-center justify-center rounded-full text-5xl ring-4 ring-white ${c.bg} shadow-lg`}
-      >
-        {emoji}
+      <div className={`h-56 w-full overflow-hidden rounded-3xl ring-4 ring-white shadow-lg ${c.bgSoft}`}>
+        <Image
+          src={image}
+          alt={name}
+          width={imageWidth}
+          height={imageHeight}
+          className="h-full w-full object-cover object-top"
+        />
       </div>
       <h3 className="mt-4 font-display text-lg font-bold text-ink">{name}</h3>
       <span className={`mt-1 rounded-full px-3 py-0.5 text-xs font-semibold ${c.bgSoft} ${c.text}`}>

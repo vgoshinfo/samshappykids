@@ -76,42 +76,54 @@ export const characters: {
   name: string;
   tagline: string;
   blurb: string;
-  emoji: string;
+  image: string;
+  imageWidth: number;
+  imageHeight: number;
   color: ColorKey;
 }[] = [
   {
     name: "Sam",
     tagline: "The Musical Leader",
     blurb: "Curious, kind, and encouraging — Sam loves music, friendship, and helping everyone sing along.",
-    emoji: "🦁",
+    image: "/images/characters/sam.png",
+    imageWidth: 300,
+    imageHeight: 1024,
     color: "sunny",
   },
   {
     name: "Mia",
     tagline: "The Little Dancer",
     blurb: "Energetic, playful, and expressive, Mia loves melodies, colors, and happy little moments.",
-    emoji: "🌸",
+    image: "/images/characters/mia.png",
+    imageWidth: 280,
+    imageHeight: 1024,
     color: "coral",
   },
   {
     name: "Leo",
     tagline: "The Explorer",
     blurb: "Adventurous, brave, and curious, Leo brings fun, movement, and big smiles to every song.",
-    emoji: "🐵",
+    image: "/images/characters/leo.png",
+    imageWidth: 230,
+    imageHeight: 1024,
     color: "grass",
   },
   {
     name: "Lily",
     tagline: "The Little Dreamer",
     blurb: "Gentle, sweet, and imaginative, Lily loves stories, nature, and peaceful bedtime tunes.",
-    emoji: "🦋",
+    image: "/images/characters/lily.png",
+    imageWidth: 170,
+    imageHeight: 1024,
     color: "sky",
   },
   {
     name: "Noah",
     tagline: "The Little Thinker",
     blurb: "Curious, clever, and a little silly, Noah enjoys adventures, animals, and sing-along fun.",
-    emoji: "🦊",
+    image: "/images/characters/noah.png",
+    imageWidth: 316,
+    imageHeight: 1024,
     color: "grape",
   },
 ];
