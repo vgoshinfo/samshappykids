@@ -1,0 +1,49 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fffdf5;
+  --foreground: #3a2e5c;
+
+  --color-sunny: #ffc93c;
+  --color-sunny-dark: #f2a900;
+  --color-sky: #3ec6e0;
+  --color-sky-dark: #1fa9c4;
+  --color-coral: #ff6f61;
+  --color-coral-dark: #ec4f40;
+  --color-grass: #6fcf97;
+  --color-grass-dark: #4bb877;
+  --color-grape: #9b7ede;
+  --color-grape-dark: #7f5cc9;
+  --color-cream: #fffdf5;
+  --color-ink: #3a2e5c;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-display: var(--font-fredoka);
+  --font-sans: var(--font-nunito);
+
+  --color-sunny: var(--color-sunny);
+  --color-sunny-dark: var(--color-sunny-dark);
+  --color-sky: var(--color-sky);
+  --color-sky-dark: var(--color-sky-dark);
+  --color-coral: var(--color-coral);
+  --color-coral-dark: var(--color-coral-dark);
+  --color-grass: var(--color-grass);
+  --color-grass-dark: var(--color-grass-dark);
+  --color-grape: var(--color-grape);
+  --color-grape-dark: var(--color-grape-dark);
+  --color-cream: var(--color-cream);
+  --color-ink: var(--color-ink);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-nunito), Arial, Helvetica, sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-fredoka), var(--font-nunito), Arial, sans-serif;
+}
