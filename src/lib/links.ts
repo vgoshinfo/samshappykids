@@ -1,6 +1,6 @@
 // Placeholder URLs — replace with real profile/channel links when available.
 export const externalLinks = {
-  youtube: "#",
+  youtube: "https://www.youtube.com/channel/UCW-IkcRAO1zCEzYsFhbSCzg",
   spotify: "#",
   amazonMusic: "#",
   appleMusic: "#",
