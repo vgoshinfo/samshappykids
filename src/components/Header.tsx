@@ -10,14 +10,14 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-50 border-b-4 border-sunny bg-white/90 backdrop-blur">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-2">
         <Link href="/" onClick={() => setOpen(false)}>
           <Image
             src="/images/logo.jpeg"
             alt="Sam's Happy Kids Sing-Along"
             width={1024}
             height={1024}
-            className="h-12 w-auto object-contain sm:h-14"
+            className="h-16 w-auto object-contain sm:h-20"
             priority
           />
         </Link>
