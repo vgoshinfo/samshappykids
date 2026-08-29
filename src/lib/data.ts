@@ -135,6 +135,7 @@ export const albums: {
   spotifyUrl: string;
   spotifyEmbedSrc: string;
   appleMusicUrl?: string;
+  appleMusicEmbedSrc?: string;
 }[] = [
   {
     title: "Full Album Vol. 1",
@@ -143,6 +144,7 @@ export const albums: {
     spotifyUrl: "https://open.spotify.com/album/0rmU5xaXYwpnfGi3xbvwOU",
     spotifyEmbedSrc: "https://open.spotify.com/embed/album/0rmU5xaXYwpnfGi3xbvwOU?utm_source=generator",
     appleMusicUrl: "https://music.apple.com/in/album/sams-happy-kids-sing-along/6804042849",
+    appleMusicEmbedSrc: "https://embed.music.apple.com/in/album/sams-happy-kids-sing-along/6804042849",
   },
   {
     title: "Full Album Vol. 2",
@@ -151,6 +153,7 @@ export const albums: {
     spotifyUrl: "https://open.spotify.com/album/7bPHPLL8LmAJ4ZiJ7eMCNr",
     spotifyEmbedSrc: "https://open.spotify.com/embed/album/7bPHPLL8LmAJ4ZiJ7eMCNr?utm_source=generator",
     appleMusicUrl: "https://music.apple.com/in/album/sams-happy-kids-nursery-rhymes-vol-2/6804828491",
+    appleMusicEmbedSrc: "https://embed.music.apple.com/in/album/sams-happy-kids-nursery-rhymes-vol-2/6804828491",
   },
 ];
 

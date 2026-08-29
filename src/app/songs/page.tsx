@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Section from "@/components/Section";
-import Button from "@/components/Button";
 import CategoryCard from "@/components/CategoryCard";
 import { albums, songCategories } from "@/lib/data";
 
@@ -72,7 +71,11 @@ export default function SongsPage() {
                   {album.title}
                 </h3>
                 <p className="text-sm text-ink/60">{album.subtitle}</p>
-                <div className="mt-4 overflow-hidden rounded-xl">
+
+                <p className="mt-4 font-display text-xs font-bold uppercase tracking-wide text-grass-dark">
+                  Listen on Spotify
+                </p>
+                <div className="mt-2 overflow-hidden rounded-xl">
                   <iframe
                     title={`${album.title} on Spotify`}
                     src={album.spotifyEmbedSrc}
@@ -85,12 +88,26 @@ export default function SongsPage() {
                     loading="lazy"
                   />
                 </div>
-                {album.appleMusicUrl && (
-                  <div className="mt-4">
-                    <Button href={album.appleMusicUrl} variant="outline" external>
+
+                {album.appleMusicEmbedSrc && (
+                  <>
+                    <p className="mt-5 font-display text-xs font-bold uppercase tracking-wide text-coral-dark">
                       Listen on Apple Music
-                    </Button>
-                  </div>
+                    </p>
+                    <div className="mt-2 overflow-hidden rounded-xl">
+                      <iframe
+                        title={`${album.title} on Apple Music`}
+                        src={album.appleMusicEmbedSrc}
+                        width="100%"
+                        height="450"
+                        style={{ borderRadius: "12px" }}
+                        frameBorder="0"
+                        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+                        allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write"
+                        loading="lazy"
+                      />
+                    </div>
+                  </>
                 )}
               </div>
             </div>
