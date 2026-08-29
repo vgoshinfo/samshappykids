@@ -25,13 +25,15 @@ export default function CharacterCard({
 
   return (
     <div className="flex flex-col items-center text-center">
-      <div className={`h-56 w-full overflow-hidden rounded-3xl ring-4 ring-white shadow-lg ${c.bgSoft}`}>
+      <div
+        className={`flex h-64 w-full items-center justify-center overflow-hidden rounded-3xl ring-4 ring-white shadow-lg ${c.bgSoft}`}
+      >
         <Image
           src={image}
           alt={name}
           width={imageWidth}
           height={imageHeight}
-          className="h-full w-full object-cover object-top"
+          className="h-full w-auto object-contain"
         />
       </div>
       <h3 className="mt-4 font-display text-lg font-bold text-ink">{name}</h3>

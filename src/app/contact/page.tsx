@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Section from "@/components/Section";
 import ContactForm from "@/components/ContactForm";
+import { contactEmails } from "@/lib/links";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -49,7 +50,24 @@ export default function ContactPage() {
                 </li>
               ))}
             </ul>
-            <p className="mt-10 font-display text-lg font-semibold text-ink">
+            <div className="mt-10 rounded-2xl bg-grass/10 p-5">
+              <h3 className="font-display text-sm font-bold uppercase tracking-wide text-grass-dark">
+                Email Us Directly
+              </h3>
+              <p className="mt-2 text-sm text-ink/80">
+                General inquiries:{" "}
+                <a href={`mailto:${contactEmails.general}`} className="underline">
+                  {contactEmails.general}
+                </a>
+              </p>
+              <p className="mt-1 text-sm text-ink/80">
+                Music inquiries:{" "}
+                <a href={`mailto:${contactEmails.music}`} className="underline">
+                  {contactEmails.music}
+                </a>
+              </p>
+            </div>
+            <p className="mt-6 font-display text-lg font-semibold text-ink">
               Thank you for being part of our happy little music world.
             </p>
           </div>
