@@ -5,6 +5,7 @@ import { contactEmails } from "@/lib/links";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description: "Privacy Policy for Sam's Happy Kids Sing-Along.",
+  alternates: { canonical: "/privacy-policy" },
 };
 
 export default function PrivacyPolicyPage() {

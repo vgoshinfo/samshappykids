@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: "Songs",
   description:
     "Explore our growing collection of nursery rhymes, lullabies, learning songs, and happy sing-alongs for babies, toddlers, and preschoolers.",
+  alternates: { canonical: "/songs" },
 };
 
 const albumUses = [
@@ -20,9 +21,25 @@ const albumUses = [
   "Nursery rhyme playlists",
 ];
 
+const albumsJsonLd = albums.map((album) => ({
+  "@context": "https://schema.org",
+  "@type": "MusicAlbum",
+  name: `${album.title} — ${album.subtitle}`,
+  byArtist: {
+    "@type": "MusicGroup",
+    name: "Sam's Happy Kids Sing-Along",
+  },
+  image: `https://www.samshappykids.com${album.image}`,
+  url: album.spotifyUrl,
+}));
+
 export default function SongsPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(albumsJsonLd) }}
+      />
       <section className="bg-gradient-to-b from-coral/15 to-cream py-20 text-center sm:py-28">
         <div className="mx-auto max-w-3xl px-6">
           <h1 className="font-display text-4xl font-bold text-ink sm:text-5xl">

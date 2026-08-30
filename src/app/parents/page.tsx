@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   title: "For Parents",
   description:
     "Sam's Happy Kids Sing-Along is created to be a trusted music space for families with young children, with content designed for early childhood learning.",
+  alternates: { canonical: "/parents" },
 };
 
 const helpItems = [

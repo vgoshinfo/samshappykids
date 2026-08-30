@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Contact",
   description:
     "Get in touch with Sam's Happy Kids Sing-Along for general questions, music inquiries, YouTube collaborations, licensing, and brand partnerships.",
+  alternates: { canonical: "/contact" },
 };
 
 const contactReasons = [

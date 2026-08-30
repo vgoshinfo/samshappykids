@@ -5,6 +5,7 @@ import { contactEmails } from "@/lib/links";
 export const metadata: Metadata = {
   title: "Terms of Use",
   description: "Terms of Use for Sam's Happy Kids Sing-Along.",
+  alternates: { canonical: "/terms-of-use" },
 };
 
 export default function TermsOfUsePage() {
