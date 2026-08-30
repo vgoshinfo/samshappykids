@@ -8,6 +8,17 @@ export const metadata: Metadata = {
   title: "Songs",
   description:
     "Explore our growing collection of nursery rhymes, lullabies, learning songs, and happy sing-alongs for babies, toddlers, and preschoolers.",
+  keywords: [
+    "kids songs list",
+    "nursery rhyme albums",
+    "ABC song for kids",
+    "counting songs for toddlers",
+    "bedtime lullaby album",
+    "action songs for kids",
+    "daily routine songs",
+    "animal songs for kids",
+    "full album kids music",
+  ],
   alternates: { canonical: "/songs" },
 };
 

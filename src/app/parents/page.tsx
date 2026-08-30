@@ -5,6 +5,14 @@ export const metadata: Metadata = {
   title: "For Parents",
   description:
     "Sam's Happy Kids Sing-Along is created to be a trusted music space for families with young children, with content designed for early childhood learning.",
+  keywords: [
+    "safe kids music for parents",
+    "early childhood learning songs",
+    "educational songs for toddlers",
+    "trusted children's music",
+    "songs for early learning",
+    "family-friendly kids music",
+  ],
   alternates: { canonical: "/parents" },
 };
 

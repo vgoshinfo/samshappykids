@@ -7,6 +7,14 @@ export const metadata: Metadata = {
   title: "Videos",
   description:
     "Watch Sam's Happy Kids on YouTube — colorful nursery rhyme videos, lyric videos, and sing-along fun for children.",
+  keywords: [
+    "kids YouTube videos",
+    "nursery rhyme videos",
+    "sing-along videos for toddlers",
+    "lyric videos for kids",
+    "YouTube channel for toddlers",
+    "children's music videos",
+  ],
   alternates: { canonical: "/videos" },
 };
 

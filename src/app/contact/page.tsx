@@ -7,6 +7,12 @@ export const metadata: Metadata = {
   title: "Contact",
   description:
     "Get in touch with Sam's Happy Kids Sing-Along for general questions, music inquiries, YouTube collaborations, licensing, and brand partnerships.",
+  keywords: [
+    "contact Sam's Happy Kids Sing-Along",
+    "kids music licensing inquiries",
+    "children's music brand partnership",
+    "YouTube collaboration kids music",
+  ],
   alternates: { canonical: "/contact" },
 };
 

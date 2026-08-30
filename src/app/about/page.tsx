@@ -6,6 +6,14 @@ export const metadata: Metadata = {
   title: "About",
   description:
     "Sam's Happy Kids Sing-Along is a joyful nursery rhyme and children's music brand created for babies, toddlers, preschoolers, and families around the world.",
+  keywords: [
+    "about Sam's Happy Kids Sing-Along",
+    "children's music brand",
+    "kids music mission",
+    "family-friendly songs brand",
+    "meet Sam and friends",
+    "nursery rhyme brand story",
+  ],
   alternates: { canonical: "/about" },
 };
 
