@@ -6,7 +6,7 @@ export const externalLinks = {
   appleMusic: "https://music.apple.com/in/album/sams-happy-kids-sing-along/6804042849",
   itunes: "https://music.apple.com/in/album/sams-happy-kids-sing-along/6804042849",
   instagram: "#",
-  facebook: "#",
+  facebook: "https://www.facebook.com/samshappykids",
 };
 
 export const contactEmails = {
